@@ -1,0 +1,48 @@
+.taskForm {
+    padding: 10px 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.taskForm label {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.taskForm .formInput {
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.taskForm .formInput::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.taskForm .submitBtnContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.taskForm .submitBtnContainer .submitBtn {
+    padding: 5px 20px;
+    color: white;
+    background-color: #369e62;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .taskForm {
+        width: 80%;
+    }
+}

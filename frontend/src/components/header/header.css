@@ -1,0 +1,29 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #0071c2;
+    ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .title {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.logoutBtn {
+    text-align: end;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: inherit;
+    margin-right: 30px;
+}
+

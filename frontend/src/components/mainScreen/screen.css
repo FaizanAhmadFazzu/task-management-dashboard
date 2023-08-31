@@ -1,0 +1,37 @@
+.mainback {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    padding: 10px 50px;
+    overflow-x: hidden;
+    background: #fbfbfb;
+}
+
+.page {
+    width: 100%;
+}
+
+.heading {
+    font-size: 30px;
+    padding: 5px 10px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.backBtn {
+    color: #333;
+    padding: 5px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 576px) {
+    .mainback {
+        padding: 0;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+}

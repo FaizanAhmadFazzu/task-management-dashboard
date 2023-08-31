@@ -1,0 +1,243 @@
+.taskContainer {
+    display: flex;
+    /* padding: 0 50px; */
+}
+
+.taskContainer .sidebar {
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+}
+
+.taskContainer .sidebar select {
+    width: 200px;
+    appearance: none;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+
+.taskContainer .sidebar .selectStatus {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskContainer .sidebar .selectPriorityLevel {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tasks {
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.addBtnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.addBtnContainer .addBtn {
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0071c2;
+    float: right;
+    margin-top: 5px;
+}
+
+.noData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.taskCardContainer {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px -2px rgb(145 145 145 / 20%);
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex: 25%;
+}
+
+.taskCard {
+    padding: 30px 20px;
+}
+
+.taskCard .cardTitle {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.taskCard .taskDesc {
+    font-size: 16px;
+    font-weight: 300;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.taskCard .status {
+    margin-top: 5px;
+}
+
+
+.taskCard .statusBadge {
+    /* margin-top: 5px; */
+    border-radius: 3px;
+    color: white;
+    padding: 1px 15px 4px;
+    font-size: 14px;
+}
+
+.taskCard .dueDate {
+    margin-top: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.taskCard .taskCardBtn {
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+    /* justify-content: end; */
+    align-items: center;
+}
+
+.taskCard .taskCardBtn .button {
+    font-size: 14px;
+    padding: 4px 20px;
+}
+
+.taskCard .taskCardBtn .viewBtn {
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 4px 12px;
+}
+
+.taskCard .taskCardBtn .editBtn {
+    color: #4CAF50;
+    background-color: white;
+    border: 1px solid #4CAF50;
+}
+
+.taskCard .taskCardBtn .editBtn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.taskCard .taskCardBtn .deleteBtn {
+    color: #f44336;
+    background-color: white;
+    border: 1px solid #f44336;
+}
+
+.taskCard .taskCardBtn .deleteBtn:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.taskCard .seeMore {
+    font-weight: 500;
+    color: blue;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .taskContainer {
+        flex-direction: column;
+    }
+
+    .taskContainer .sidebar {
+        width: 100%;
+        flex-direction: row;
+        gap: 5px;
+        /* justify-content: center; */
+    }
+
+    .taskContainer .tasks {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .taskCardContainer {
+        flex: 100%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .taskContainer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .taskContainer .sidebar {
+        width: 100%;
+        /* justify-content: center; */
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .taskContainer .tasks {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    /* .taskContainer .sidebar select {
+        width: 50%;
+    } */
+
+    .taskContainer .sidebar select::placeholder {
+        font-size: 14px;
+    }
+
+    .tasks .slideBtn {
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        /* width: 100%; */
+        left: 20px;
+        right: 20px;
+    }
+
+    .tasks .slideBtn button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        background: transparent;
+    }
+
+    .tasks .slideBtn img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .tasks .nextSlideBtn {
+        float: right;
+    }
+
+    .tasks .swiper {
+        padding-top: 55px;
+    }
+}
